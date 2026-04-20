@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Mentor_Home">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#027FE3"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/white"/>
+
+
+    <RelativeLayout
+        android:id="@+id/framelayput"
+        android:layout_width="match_parent"
+        android:layout_height="766dp"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="408sp"
+            android:layout_height="119sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="497dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Ready to inspire and empower? Let's make mentorship magic happen!"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewTo_Do"
+            android:layout_width="419dp"
+            android:layout_height="89dp"
+            android:layout_below="@id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="211dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="466dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="*Mentors, here you can create your to-do list:"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMeeting"
+            android:layout_width="419dp"
+            android:layout_height="89dp"
+            android:layout_below="@id/textViewTo_Do"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginTop="276dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="401dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="*Mentors, here you can schedule your Meetings:"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="258dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginBottom="616dp"
+            android:fontFamily="@font/abril_fatface"
+            android:text="Welcome, Mentor! 🌟"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/B23"
+            android:layout_width="169dp"
+            android:layout_height="155dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="235dp"
+            android:layout_marginBottom="240dp"
+            android:backgroundTint="@color/blue"
+            android:text="Create TodoList"
+            android:textSize="20dp"/>
+
+        <Button
+            android:id="@+id/B25"
+            android:layout_width="185dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="245dp"
+            android:backgroundTint="@color/blue"
+            android:text="Schedule Meetings"
+            android:textSize="20dp"/>
+
+        <ImageButton
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="24dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="History Of Mentoring"
+            android:onClick="Click"
+            android:src="@drawable/images" />
+
+        <TextView
+            android:id="@+id/historyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/historyButton"
+            android:layout_alignStart="@id/historyButton"
+            android:layout_marginStart="113dp"
+            android:layout_marginBottom="2dp"
+            android:text="History of Mentoring"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

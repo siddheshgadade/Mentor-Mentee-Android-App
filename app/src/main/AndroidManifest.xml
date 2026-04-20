@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MentorMentee"
+        tools:targetApi="31">
+        <activity
+            android:name=".Terms_And_Condition"
+            android:exported="false" />
+        <activity
+            android:name=".About_Us"
+            android:exported="false" />
+        <activity
+            android:name=".History_of_mentee"
+            android:exported="false"
+            android:parentActivityName=".Mentee_Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentee_Home" />
+        </activity>
+        <activity
+            android:name=".Schedule_Meeting"
+            android:exported="false"
+            android:parentActivityName=".Mentor_Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentor_Home" />
+        </activity>
+        <activity
+            android:name=".History_Of_Mentoring"
+            android:exported="false"
+            android:parentActivityName=".Mentor_Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentor_Home" />
+        </activity>
+        <activity
+            android:name=".TO_DO_list"
+            android:exported="false"
+            android:parentActivityName=".Mentor_Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentor_Home" />
+        </activity>
+        <activity
+            android:name=".Mentee_Home"
+            android:exported="false"
+            android:parentActivityName=".Profile_Mentee">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Profile_Mentee" />
+        </activity>
+        <activity
+            android:name=".ChatRoom"
+            android:exported="false" />
+        <activity
+            android:name=".More_Mentee"
+            android:exported="false"
+            android:parentActivityName=".Profile_Mentee">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Profile_Mentee" />
+        </activity>
+        <activity
+            android:name=".Settings_Mentee"
+            android:exported="false"
+            android:parentActivityName=".Profile_Mentee">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Profile_Mentee" />
+        </activity>
+        <activity
+            android:name=".Profile_Mentee"
+            android:exported="false" />
+        <activity
+            android:name=".More_Mentor"
+            android:exported="false"
+            android:parentActivityName=".Setting_Mentor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Setting_Mentor" />
+        </activity> <!-- Specify the parent activity here -->
+        <activity
+            android:name=".Setting_Mentor"
+            android:parentActivityName=".Mentor_Home"> <!-- Specify the parent activity here -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentor_Home" />
+        </activity>
+        <activity
+            android:name=".Profile_Mentor"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register_Mentee"
+            android:exported="false" />
+        <activity
+            android:name=".Mentor_Home"
+            android:exported="false"
+            android:parentActivityName=".Mentor_Home">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Mentor_Home" />
+        </activity> <!-- Specify the parent activity here -->
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".loginmentor"
+            android:exported="false" />
+        <activity
+            android:name=".logmentee"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

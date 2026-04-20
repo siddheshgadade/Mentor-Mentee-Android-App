@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588479499490",
+    "firebase_url": "https://mentor-mentee-d1840-default-rtdb.firebaseio.com",
+    "project_id": "mentor-mentee-d1840",
+    "storage_bucket": "mentor-mentee-d1840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588479499490:android:fd5ada91d6a72c66c5a2bb",
+        "android_client_info": {
+          "package_name": "com.example.mentormentee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588479499490-16e551ll3r18q6hunrvjot5npj7efcpc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkVsFf83_h0Ri0p7rFa5BnNPAfzSz2Xyw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588479499490-16e551ll3r18q6hunrvjot5npj7efcpc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

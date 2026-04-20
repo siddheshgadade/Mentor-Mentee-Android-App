@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_below="@id/toolbar"
+    android:layout_height="match_parent"
+    tools:context=".More_Mentor"
+    android:background="@color/white"
+
+
+
+    >
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_above="@id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#027FE3"
+      app:title="Mentor Mentee"
+      app:titleTextColor="@color/white">
+
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <TextView
+      android:id="@+id/textChatRoomDescription"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/toolbar"
+      android:padding="16dp"
+      android:text="Purpose: This chatting room serves as a dedicated space for mentors and mentees to connect and engage."
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/textChatRoomDescription2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textChatRoomDescription"
+      android:padding="16dp"
+      android:text="Connection: It enables mentors to share their knowledge, provide guidance, and support mentees in their growth journey.
+"
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/textChatRoomDescription3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textChatRoomDescription2"
+      android:padding="16dp"
+      android:text="Mentorship: Mentees can seek advice, ask questions, and learn from experienced mentors."
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/textChatRoomDescription4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textChatRoomDescription3"
+      android:padding="16dp"
+      android:text="Access: To get started on your mentorship journey, simply click the button below."
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+  <TextView
+      android:id="@+id/textChatRoomDescription5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/textChatRoomDescription4"
+      android:padding="16dp"
+      android:text="Community: Join our community to foster meaningful mentor-mentee relationships and encourage knowledge sharing."
+      android:textColor="@android:color/black"
+      android:textSize="16sp"
+      android:textStyle="bold" />
+
+
+
+
+  <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Click Here To Access The Chat Room "
+      android:layout_below="@id/textChatRoomDescription5"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+  <Button
+      android:id="@+id/button1"
+      android:layout_width="wrap_content"
+      android:layout_height="83dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginEnd="154dp"
+      android:layout_marginBottom="138dp"
+      android:backgroundTint="@color/blue"
+      android:onClick="Click"
+      android:text="ChatRoom"
+      android:textColor="#0B0A0A"
+      android:textColorHighlight="@color/blue"
+      android:textColorHint="#000000"
+      android:textSize="20sp" />
+
+
+</RelativeLayout>

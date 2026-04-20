@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRoom">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0379FF"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:subtitleTextColor="#171616"
+        app:title="Mentor Mentee(Chat Room)"
+        app:titleTextColor="@color/black" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="583dp"
+        android:layout_above="@id/sendMessageLayout"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/white"/>
+    <RelativeLayout
+        android:padding="15dp"
+        android:id="@+id/sendMessageLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/message"
+            android:hint="Message Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/sendMessage"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_send_24"/>
+    </RelativeLayout>
+
+</RelativeLayout>

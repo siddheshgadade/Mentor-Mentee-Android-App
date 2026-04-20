@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Terms_And_Condition">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#027FE3"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Terms And Condition"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3">
+
+        <TextView
+            android:id="@+id/aboutUsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Terms and Conditions\n\nWelcome to the Mentor Mentee App. Before using our services, please carefully read and understand the following Terms and Conditions:\n\nAcceptance of Terms:\n\nBy using the Mentor Mentee App, you agree to abide by these Terms and Conditions. If you do not agree, please refrain from using our services.\n\nRegistration and Account:\n\nUsers are required to create an account to access the app's features. All provided information must be accurate and up to date.\n\nUser Conduct:\n\nUsers agree to use the app responsibly and refrain from engaging in any unlawful or harmful activities.\n\nMentor-Mentee Interactions:\n\nMentors and mentees are solely responsible for their interactions. The app is a platform for connection, and we do not endorse or monitor individual interactions.\n\nPrivacy Policy:\n\nOur Privacy Policy outlines how we collect, use, and protect user data. By using the app, you agree to our Privacy Policy.\n\nIntellectual Property:\n\nThe Mentor Mentee App and its content are protected by intellectual property rights. Users may not reproduce or distribute any part of the app without prior authorization.\n\nFeedback and Reviews:\n\nUsers may provide feedback and reviews, which may be used for app improvement. Users are encouraged to be constructive and respectful in their feedback.\n\nLiability Limitation:\n\nThe Mentor Mentee App is not liable for any direct or indirect damages resulting from the use of our services.\n\nTermination of Account:\n\nWe reserve the right to terminate or suspend user accounts for any violation of these Terms and Conditions.\n\nChanges to Terms:\n\nWe may update these Terms and Conditions from time to time. Users will be notified of any significant changes.\n\nBy using the Mentor Mentee App, you acknowledge that you have read, understood, and agreed to these Terms and Conditions. If you have any questions or concerns, please contact us at 'siddheshgadade3@gmail.com'."
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+</RelativeLayout>

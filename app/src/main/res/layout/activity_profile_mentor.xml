@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_Mentor"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#027FE3"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/white"
+        />
+
+    <FrameLayout
+        android:id="@+id/framelayput"
+        android:layout_width="match_parent"
+        android:layout_height="603dp"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="-6dp"
+        android:background="@drawable/profile">
+        <!-- Your fragment or content views can go here -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="165dp"
+                android:layout_height="213dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="504dp"
+                app:srcCompat="@drawable/baseline_person_pin_24" />
+
+            <TextView
+                android:layout_width="169dp"
+                android:layout_height="69dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="123dp"
+                android:layout_marginBottom="465dp"
+                android:text="Mentor"
+                android:textColor="#020202"
+                android:textColorHint="#100F0F"
+                android:textSize="60sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewUser"
+                android:layout_width="189dp"
+                android:layout_height="67dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="110dp"
+                android:layout_marginBottom="297dp"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textColorHint="#100F0F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="291dp"
+                android:layout_height="86dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="200dp"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textColorHint="#100F0F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewUserPass"
+                android:layout_width="191dp"
+                android:layout_height="78dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="84dp"
+                android:layout_marginBottom="22dp"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textColorHint="#100F0F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewUserPhone"
+                android:layout_width="200dp"
+                android:layout_height="73dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="87dp"
+                android:layout_marginBottom="117dp"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textColorHint="#100F0F"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="319dp"
+                android:layout_toStartOf="@+id/textViewUser"
+                app:srcCompat="@drawable/baseline_person_24" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="74dp"
+                android:layout_height="85dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="204dp"
+                android:layout_toStartOf="@+id/textViewEmail"
+                app:srcCompat="@drawable/mail_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="82dp"
+                android:layout_height="77dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="116dp"
+                android:layout_toStartOf="@+id/textViewUserPhone"
+                app:srcCompat="@drawable/phone_foreground" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toStartOf="@+id/textViewUserPass"
+                app:srcCompat="@drawable/pass1_foreground" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <me.ibrahimsn.lib.SmoothBottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#027FE3"
+        app:backgroundColor="#027FE3"
+        app:indicatorRadius="10dp"
+        app:menu="@menu/menu"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:filterTouchesWhenObscured="true"/>
+</RelativeLayout>

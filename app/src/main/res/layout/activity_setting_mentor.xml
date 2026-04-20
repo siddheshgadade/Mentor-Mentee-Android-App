@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting_Mentor"
+    android:background="@color/white"
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#027FE3"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/white"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- "Log Out" Button -->
+
+    <TextView
+        android:id="@+id/contactusmentor"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/terms_and_conditionmentor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="186dp"
+        android:clickable="true"
+        android:onClick="openContactUs"
+        android:text="Contact Us >"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/terms_and_conditionmentor"
+        android:layout_width="401dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/AboutUsTextViewmentor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="64dp"
+        android:clickable="true"
+        android:onClick="openContactUs"
+        android:text="Terms And Condition  >"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/AboutUsTextViewmentor"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="3dp"
+        android:clickable="true"
+        android:onClick="openContactUs"
+        android:text="About Us >"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="229dp"
+        android:layout_marginBottom="437dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="logOut"
+        android:text="Log Out"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".About_Us">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#027FE3"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="About Us"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3">
+
+        <TextView
+            android:id="@+id/aboutUsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="About Us\n\nWelcome to the Mentor Mentee App, a platform dedicated to fostering meaningful connections and facilitating personal and professional growth. Our mission is to bridge the gap between experienced mentors and individuals seeking guidance, creating a space where knowledge is shared, and potential is unlocked.\n\nOur Vision\n\nTo cultivate a global community of mentors and mentees, where wisdom, experience, and guidance flow freely, empowering individuals to achieve their full potential.\n\nWhat We Stand For\n\nEmpowerment: We believe in the power of mentorship to inspire, guide, and uplift individuals on their journey towards success and personal development.\n\nConnection: We strive to create a vibrant community where meaningful relationships are forged, fostering an environment of trust and mutual respect.\n\nContinuous Learning: We recognize that learning is a lifelong journey. Through mentorship, we aim to provide opportunities for continuous growth and skill development.\n\nWhy Choose Mentor Mentee App?\n\nTailored Connections: Our app employs advanced matching algorithms to connect mentees with mentors based on shared interests, goals, and expertise.\n\nSecure and Private: We prioritize the security and privacy of our users. Sensitive information is encrypted, and best practices for data handling are rigorously followed.\n\nIntuitive User Experience: Our user-friendly interface ensures seamless navigation, making it easy for both mentors and mentees to engage and connect.\n\nThank you for being a part of the Mentor Mentee App community. Together, we're shaping a future where mentorship knows no bounds."
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</RelativeLayout>

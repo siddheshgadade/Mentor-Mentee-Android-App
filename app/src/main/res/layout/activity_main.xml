@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/size"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loging"
+
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0379FF"
+        app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Large"
+        app:subtitleTextColor="#171616"
+        app:title="Mentor Mentee"
+        app:titleTextColor="@color/black" />
+
+
+    <Button
+        android:id="@+id/mentor"
+        android:layout_width="149dp"
+        android:layout_height="137dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="404dp"
+        android:backgroundTint="#0379FF"
+        android:fontFamily="@font/abril_fatface"
+        android:onClick="click"
+        android:text="Login Mentor"
+        android:textColor="#040303"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/mentee"
+        android:layout_width="149dp"
+        android:layout_height="137dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="404dp"
+        android:backgroundTint="#0379FF"
+        android:fontFamily="@font/abril_fatface"
+        android:onClick="click"
+        android:text="Login Mentee"
+        android:textColor="#090808"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logmain"
+        android:layout_width="284dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/regis"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="86dp"
+        android:fontFamily="@font/abril_fatface"
+        android:scrollbarSize="2dp"
+        android:text="Login Or Register"
+        android:textColor="#0B0909"
+        android:textColorHighlight="#050505"
+        android:textColorHint="#070707"
+        android:textColorLink="#050505"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/regis"
+        android:layout_width="223dp"
+        android:layout_height="81dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="312dp"
+        android:backgroundTint="#0379FF"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Register Here Mentor"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/regismentee"
+        android:layout_width="229dp"
+        android:layout_height="74dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="228dp"
+        android:backgroundTint="#0379FF"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Register Here Mentee"
+        android:textColor="#0E0D0D"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar"
+        android:layout_width="116dp"
+        android:layout_height="103dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="380dp"
+        android:visibility="gone" />
+</RelativeLayout>
